@@ -35,6 +35,7 @@
             align-items: center;
             position: sticky;
             top: 0px;
+            width: 100%;
         }
         .cl1 .cl1a{
             font-family: batman;
@@ -86,7 +87,9 @@
             width: 100%;
         }
         .txt1{
-            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             padding-left: 20px;
             height: 30em;
         }
@@ -101,6 +104,7 @@
             padding: 25px;
             border-radius: 40px;
             font-size: large;
+            text-align: center;
             letter-spacing: 10px;
             font-family: batman;
             width: 50%;
@@ -115,7 +119,7 @@
 
         .cl3{
             display: flex;
-            height: 120vh;
+           
             width: 100%;
         }
         .cl3a img{
@@ -249,7 +253,7 @@
             align-items: center;
         }
         .four .spl1:hover{
-            box-shadow: 2px 3px 10px 2px red;
+            box-shadow: 5px 5px 10px 3px grey;
         }
         .grid1 img{
             height: 70%;
@@ -279,7 +283,6 @@
             font-size: medium ;
             font-family: "Josefin Sans", sans-serif;
             color: white;
-
         }
 
 
@@ -411,7 +414,7 @@
             background-color: black;
         }
         .box1:hover{
-            box-shadow: 2px 3px 20px 2px red;
+            box-shadow: 5px 5px 10px 3px grey;
         }
         .box1 h2{
             font-family: batman;
@@ -537,17 +540,145 @@
             flex-direction: column;
             background-color: black;
             color: white;
-            font-family: batman;
+            font-family: "Josefin Sans", sans-serif;
             font-size: small;
             justify-content: center;
             align-items: center;
             padding: 5%;
+        }
+
+        @media screen and (width<426px){
+            body{
+                width: 120%;
+                background-color: aqua;
+            }
+            .cl1{
+                flex-direction: row;
+                justify-content: space-between;
+                width: 100%;
+            }
+            .cl1b{
+                display: none;
+            }
+            .cl1c{
+                display: none;
+            }
+            .cl2{
+                flex-direction: column;
+            }
+            .cl2 img{
+                width: 100%;
+            }
+            .txt1{
+                height: 50%;
+            }
+            #t1{
+                font-size: 100%;
+            }
+            .more{
+                width: 60%;
+                font-size: 50%;
+                padding: 10px;
+            }
+            .cl2b{
+                font-size: 150%;
+            }
+            .cl3{
+                flex-direction: column;
+            }
+            .cl3a img{
+                width: 100%;
+                height: 50%;
+            }
+            .cl4a{
+                flex-direction: column;
+                
+            }
+            #new{
+                margin-top: 20px;
+            }
+            .ham{
+                width: 100%;
+            }
+            .four{
+                width: 100%;
+                height: 100%;
+                grid-template-columns: 50% 50%;
+                grid-template-rows: 50% 50% 50% 50%;
+                margin-left: 0px;
+                gap: 8px;
+                justify-content: center;
+            }
+            .spl1 .name{
+                font-size: medium;
+            }
+            .spl1 span{
+                font-size: medium;
+            }
+            .spl1 .cart{
+                font-size: medium;
+            }
+            .cl5{
+                flex-direction: column;
+            }
+            .cl5a img{
+                width: 100%;
+                height: 50%;
+            }
+            .cl6{
+                flex-direction: column;
+            }
+            .cl6a img{
+                width: 100%;
+                height: 50%;
+            }
+            .cl6b .cl6b1{
+                font-size: medium;
+                width: 50%;
+            }
+            .cl6b .cl6b4{
+                font-size: medium;
+                width: 50%;
+            }
+            .cl7a{
+                flex-direction: column;
+                gap: 5px;
+            }
+            .cl8a{
+                flex-direction: column;
+            }
+            .cl11{
+                flex-direction: column;
+                row-gap: 5;
+                text-align: center;
+            }
+        }
+        @media screen and (width<376px){
+            body{
+                width: 130%;
+            }
+        }
+        @media screen and (width<321px){
+            body{
+                width: 150%;
+            }
         }
     </style>
 </head>
 <body>
     <div class="cl1">
         <div class="cl1a"><h2>Gotham Burgers</h2></div>
+        <div class="navbar">
+            <span class="dropbt"><img src="./drop.png" alt="" class="bpic"></span>
+            <div class="dropdown-content">
+                <a href="#home">HOME</a>
+                <a href="#about">ABOUT</a>
+                <a href="#offers">OFFERS</a>
+                <a href="#menu">MENU</a>
+                <a href="#contact">CONTACT</a>
+            </div>
+        </div>
+
         <div class="cl1b">
             <a href="#home">HOME</a>
             <a href="#about">ABOUT</a>
@@ -807,7 +938,7 @@
 
     <div class="cl12">
         <div>Copyright &copy; 2024 Gotham Burgers - Company by Wayne Enterprise</div> 
-        <div>Created by Vivek Reddy</div>
+        <div style="padding-top: 10px;">Created by Vivek Reddy</div>
     </div>
 
 </body>
