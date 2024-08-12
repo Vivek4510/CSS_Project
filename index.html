@@ -418,13 +418,13 @@
         }
         .box1 h2{
             font-family: batman;
-            padding: 5px;
+            padding-left: 15px;
             padding-top: 20px;
             color: white;
         }
         .box1 p{
             font-family: "Josefin Sans", sans-serif;
-            padding: 5px;
+            padding: 15px;
             padding-top: 20px;
             word-spacing: 5px;
             color: white;
@@ -493,7 +493,7 @@
         }
         .cl11 .contact{
             display: flex;
-            padding-left: 13.3%;
+            align-items: center;
             flex-direction: column;
         }
         .cl11 .explore{
@@ -550,7 +550,6 @@
         @media screen and (width<426px){
             body{
                 width: 120%;
-                background-color: aqua;
             }
             .cl1{
                 flex-direction: row;
@@ -625,6 +624,10 @@
                 width: 100%;
                 height: 50%;
             }
+            .cl5b{
+                padding-left: 20px;
+                width:90%;
+            }
             .cl6{
                 flex-direction: column;
             }
@@ -647,10 +650,36 @@
             .cl8a{
                 flex-direction: column;
             }
+            .cl9{
+                flex-direction: column;
+                height: 100%;
+            }
+            .cl9 img{
+                height: 100%;
+                width: 100%;
+            }
+            .cl9 #b1{
+                width: 40%;
+            }
             .cl11{
                 flex-direction: column;
                 row-gap: 5;
                 text-align: center;
+            }
+            .contact{
+                padding-left: 0%;
+                align-items: center;
+                justify-content: center;
+                padding-top: 20px;
+            }
+            .contact .loc{
+                padding-top: 5px;
+            }
+            .explore{
+                padding-top: 20px;
+            }
+            .explore .exp{
+                padding-top: 5px;
             }
         }
         @media screen and (width<376px){
@@ -661,6 +690,11 @@
         @media screen and (width<321px){
             body{
                 width: 150%;
+            }
+        }
+        @media screen and (width<311px){
+            body{
+                width: 160%;
             }
         }
     </style>
@@ -887,10 +921,10 @@
 
 
     <div class="cl9" id="contact">
-        <div class="cl3a">
+        <div class="cl3a" class="cl9a">
             <img src="./testimonal.jpg" alt="">
         </div>
-        <div class="cl3b">
+        <div class="cl3b" class="cl9b">
             <p id="b1">TESTIMONAL</p>
             <p id="b2">What our clients have to say</p>
             <p id="b3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
