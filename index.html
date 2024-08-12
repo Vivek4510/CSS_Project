@@ -553,7 +553,8 @@
             }
             .cl1{
                 flex-direction: row;
-                justify-content: space-between;
+                justify-content: center;
+                column-gap: 30px;
                 width: 100%;
             }
             .cl1b{
@@ -682,6 +683,33 @@
                 padding-top: 5px;
             }
         }
+        .bpic{
+            display: inline-block;
+            height: 30px;
+            width: 30px;
+            padding-top: 10px;
+        }
+        .dropdown-content{
+            display: none;
+            position: absolute;
+        }
+        .dropdown-content a{
+            color: black;
+            text-align: center;
+            text-decoration: none;
+            display: block;
+            background-color: white;
+            padding: 2px 5px;
+            margin-top: 5px;
+        }
+        .dropdown-content a:hover{
+            background-color: red;
+        }
+        .navbar:hover .dropdown-content{
+            display: block;
+        }
+
+
         @media screen and (width<376px){
             body{
                 width: 130%;
