@@ -51,7 +51,10 @@
         ion-icon{
             font-size: 20px;
         }
-        .dropbt{
+        .cl1 .navbar{
+            display: none;
+        }
+        .bpic{
             display: none;
         }
         .cl1b a{
@@ -685,34 +688,34 @@
             .explore .exp{
                 padding-top: 5px;
             }
-        }
-        .bpic{
-            display: inline-block;
-            height: 30px;
-            width: 30px;
-            padding-top: 10px;
-        }
-        .dropbt{
-            display: block;
-        }
-        .dropdown-content{
-            display: none;
-            position: absolute;
-        }
-        .dropdown-content a{
-            color: black;
-            text-align: center;
-            text-decoration: none;
-            display: block;
-            background-color: white;
-            padding: 2px 5px;
-            margin-top: 5px;
-        }
-        .dropdown-content a:hover{
-            background-color: red;
-        }
-        .navbar:hover .dropdown-content{
-            display: block;
+            .bpic{
+                display: inline-block;
+                height: 30px;
+                width: 30px;
+                padding-top: 10px;
+            }
+            .cl1 .navbar{
+                display:inline-block;
+            }
+            .dropdown-content{
+                display: none;
+                position: absolute;
+            }
+            .dropdown-content a{
+                color: black;
+                text-align: center;
+                text-decoration: none;
+                display: block;
+                background-color: white;
+                padding: 2px 5px;
+                margin-top: 5px;
+            }
+            .dropdown-content a:hover{
+                background-color: red;
+            }
+            .navbar:hover .dropdown-content{
+                display: block;
+            }
         }
 
         @media screen and (width<376px){
@@ -736,7 +739,7 @@
     <div class="cl1">
         <div class="cl1a"><h2>Gotham Burgers</h2></div>
         <div class="navbar">
-            <span class="dropbt"><img src="./drop.png" alt="" class="bpic"></span>
+            <div class="dropbt"><img src="./drop.png" alt="" class="bpic"></div>
             <div class="dropdown-content">
                 <a href="#home">HOME</a>
                 <a href="#about">ABOUT</a>
